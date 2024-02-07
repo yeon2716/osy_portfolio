@@ -560,16 +560,6 @@ function bgChange(){
 
 
 
-
-/* function wordAnimation() {
-  const tl = gsap.timeline();
-  tl.to(word, { duration: 0, opacity: 1 });
-  return tl;
-}
- */
-
-
-
 const animations = [
   {
     selector: "#app-store",
@@ -762,34 +752,6 @@ function scrollHandler(){
 }
 animate()
 window.addEventListener('scroll',scrollHandler)
-
-
-
-
-// st_article Animation
-let tl11 = gsap.timeline();
-
-tl11.to('.st_article', { autoAlpha: 1, duration: 1 })
-  .to('.st_item', {
-    keyframes: {
-      x: [-1500, -1200, -1000, -800, -400, 0, 400, 800, 1000, 1200, 1500],
-      y: [-100, 0, 0, 100, 0, 0],
-      ease: 'power4.out'
-    },
-    duration: 2,
-    stagger: 0.2, // Add stagger for a natural animation
-    scrub: 2,
-  });
-
-ScrollTrigger.create({
-  trigger: '.slide_span',
-  start: 'top 80%',
-  animation: tl11,
-  toggleActions: 'play none none reverse'
-});
-
-
-
 
 
 
